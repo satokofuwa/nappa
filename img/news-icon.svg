@@ -1,0 +1,11 @@
+<svg id="グループ_16" data-name="グループ 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142.718" height="27.95" viewBox="0 0 142.718 27.95">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_2" data-name="長方形 2" width="142.718" height="27.95" fill="#f5e4c4"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_3" data-name="グループ 3" clip-path="url(#clip-path)">
+    <path id="パス_6" data-name="パス 6" d="M126.308,27.95H16.41C7.347,27.95,0,21.694,0,13.975S7.347,0,16.41,0h109.9c9.063,0,16.41,6.257,16.41,13.975s-7.347,13.975-16.41,13.975" transform="translate(0 0)" fill="#f5e4c4"/>
+  </g>
+  <text id="お知らせ" transform="translate(71 18)" fill="#662c10" font-size="11" font-family="HiraMinProN-W3, Hiragino Mincho ProN"><tspan x="-22" y="0">お知らせ</tspan></text>
+</svg>
