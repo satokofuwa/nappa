@@ -5,27 +5,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HanaCAFE nappa69</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="js/aos/aos.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="js/aos/aos.min.css"/>
   <link rel="stylesheet" href="js/slick/slick-theme.css"/> 
   <link rel="stylesheet" href="js/slick/slick.css"/>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <header>
+  <header> 
+  <span class="nav_toggle">
+      <i></i>
+      <i></i>
+  </span>
+  <div class="gnav">
+    <nav class="nav">
+      <ul class="nav_menu_ul">
+        <li class="nav_menu_li">CAFE<br class="pc-only"> NAPPA</li>
+        <li class="nav_menu_li"><a href="#menu">メニュー<br>MENU</a></li>
+        <li class="nav_menu_li"><a href="#news_all">ニュース<br>NEWS</a></li>
+        <li class="nav_menu_li"><a href="#plan">プラン<br>PLAN</a></li>
+        <li class="nav_menu_li"><a href="#link">リンク<br>LINK</a></li>
+        <li class="nav_menu_li"><a href="#map">アクセス<br>MAP</a></li>
+
+        <button type="button" class="btn btn-primary rounded-pill " style="margin-right:0;">
+          <span class="reserve-label">ご予約</span><!-- / --> 
+          </button>
+        
+      </ul>
+    </nav> 
+  </div>
+ 
+
     <div class="slider">
       <div><img src="img/cake.jpg" alt=""></div>
       <div><img src="img/plate.jpg" alt=""></div>
       <div><img src="img/fv-img.png" alt=""></div>
       <div><img src="img/fv-img2.jpg" alt=""></div>
       <div><img src="img/cake.jpg" alt=""></div>
+   
     </div>
+    <img src="img/hana-logo.png" alt="ロゴ" class="logo">
+    <div class="sm-white-spoon">
+      <span>scroll</span>
+      <img src="img/vertical-whitespoon.png" alt="白いスプーン縦" class="vt-spoon">
+    </div><!-- /.sm-white-spoon -->
+    <img src="img/PC-gnav-img.png" alt="ナビゲーションイラスト" class="gnav-img" >
+    
     <div class="flexbox">
       <div class="flex-item1">
         <img src="img/fv-cutlary-img.png" alt="カトラリーロゴ" class="cutlary-logo">
       </div><!-- /.flex-item -->
-
       <div  class="flex-item2">
         <a href="https://retty.me/" target="_blank" rel="noopener noreferrer" class="reserve-link">
           <button type="button" class="btn btn-primary rounded-pill " style="margin-right:0;">
@@ -35,28 +65,11 @@
       </div><!-- /.flex-item -->
       <!-- button要素にdisplay flexをかけると横並びにならない為、divで囲む -->
     </div><!-- /.flexbox -->
-
-    <img src="img/hana-logo.png" alt="ロゴ" class="logo">
-
-    <div class="header-bottom">
-    <img src="img/PC-gnav-img.png" alt="ナビゲーションイラスト" class="gnav-img" >
-    <div class="gnav">
-      <nav>
-        <ul>
-          <li>CAFE<br>NAPPA</li>
-          <li><a href="#menu">メニュー<br>MENU</a></li>
-          <li><a href="#news">ニュース<br>NEWS</a></li>
-          <li><a href="#plan">プラン<br>NEWS</a></li>
-          <li><a href="#link">リンク<br>LINK</a></li>
-          <li><a href="#map">アクセス<br>MAP</a></li>
-        </ul>
-      </nav>
-    </div><!-- /.gnav -->
-  </div><!-- /.header-bottom -->
+  
   </header>
   <main>
     <section id="news">
-     <div class ="news">
+      <div class ="news">
        <h1>ニュース<br>NEWS</h1>
          <dl>
            <dt><time datetime="2023-4-15" class="date">2023年4月15日</time>
@@ -73,61 +86,80 @@
              </span><!-- /.text -->
            </button>
          </a>
-       </div>
-     <img src="img/blue-flower-sm.png" alt="" class="top-menu-flower">
-     <div class="week-lunch">
+      </div>
+    
+       <img src="img/blue-flower-sm.png" alt="" class="top-menu-flower">
+      
+    <div class="inview fadeIn ">
        <h2>Weekly Lunch Menu</h2>
        <h3>ランチメニュー</h3>
-       <div class="inview fadeIn ">
-        <img src="img/lunch-menu background.png" alt="ランチ写真背景" class="weeklunch-backーimg">
-        <img src="img/weekly-lunch.png" alt="今週のランチ" class="weeklunch-img">
-       </div>
-     </div><!-- /.week-lunch -->
+       <div class="weekly-lunch-menu sp-only">
+          <img src="img/spoon-lg.png" alt="スプーン大縦" class="sp-only spoon-lg">
+          <ul>
+            <li>アスパラガスのキッシュ</li>
+            <li>ペンネアラビアータ</li>
+            <li>コーンポタージュ</li>
+          </ul>
+        </div><!-- /.weekly-lunch-menu -->
+        <img src="img/lunch-menu background.png" alt="ランチ写真背景" class="weeklunch-backーimg pc-only">
+      <div class="weeklunch-img">
+        <img src="img/weekly-lunch.png" alt="今週のランチ" class="weekly-lunch">
+      </div><!-- / -->
+    </div><!-- /.inview -->
     </section><!-- /#news -->
+
     <section id="concept">
      <h3>私たちについて</h3>
      <h4>concept</h4>
-     <div class="concept">
-     
+    
+       <div class="concept">
+   
        <div class="concept-content">
-         <div class="flower">
+    
            <img src="img/brown-flower-sm.png" alt="茶色の花" class="concept-flower">
-         </div><!-- /.flower -->
+     
          <dl class="concept-text">
            <dt> 
              花と植物、<br>美味しいコーヒーと<br>カフェごはん</dt>
            <dd>大好きなも のたちを詰め込んだ<br>小さなカフェです。</dd>
          </dl>
-       </div>
+       </div><!-- /.concept-content -->
        <button type="button" class="btn btn-primary rounded-pill arrow concept d-block">
          <span class="button-text">
            店内の写真はこちら
          </span><!-- /.text -->
        </button>
        <img src="img/lace.png" alt=""class="lace">
- 
+      </div><!-- /.concept -->
+     
     </section>
+
     <section id="hanacafe">
      <h3>HanaCafe おすすめ</h3>
      <h4>hanacafe</h4>
      <div class="recommend">
        <div class="hanacafe-lunch">
-         <div class="lunch-img"><img src="img/lunch.png" alt="ランチ写真"></div><!-- /.lunch-img -->
+         <div class="lunch-img"><img src="img/lunch.png" alt="ランチ写真" class="pc-only"></div><!-- /.lunch-img -->
+         <img src="img/lunch-sp.png" alt="" class="sp-only">
          <div class="lunch-point"><img src="img/point1.png" alt="ポイント1" div data-aos="fade-down-right"></div><!-- /.lunch-point -->
-         <hr class="underline1">
-         <hr class="underline2">
-         <p class="recommend-txt">新鮮なオーガニック素材を利用した
-           ランチをお楽しみ下さい。</p>
+       
+          <hr class="underline1">
+          <hr class="underline2">
+        
+         <p class="recommend-txt">新鮮なオーガニック素材を利用したランチをお楽しみ下さい。</p>
        </div><!-- /.hanacafe-lunch -->
        <div class="hanacafe-coffee">
-         <div class="coffee-img"><img src="img/coffee.png" alt="コーヒー豆写真"></div>
+         <div class="coffee-img"><img src="img/coffee.png" alt="コーヒー豆写真" class="pc-only"></div>
+          <img src="img/coffee-sp.png" alt="" class="sp-only">
          <div class="coffee-point"><img src="img/point2.png" alt="ポイント２" data-aos="fade-down-left"></div>
+          
          <hr class="underline1">
          <hr class="underline2">
          <p class="recommend-txt">厳選した農園の豆を使用しています。
            香り高いコーヒーをお楽しみ頂けます。</p>
        </div><!-- /.hanacafe-coffee -->
      </div>
+  
     </section>
 
     <section  id = "menu">
@@ -192,8 +224,7 @@
        
          <div class="link-more">
            <div class="link-explain">
-             <p>いつもこだわりの素材を提供していただいている
-               素敵なお店をご紹介します。</p>
+             <p>いつもこだわりの素材を提供していただいている素敵なお店をご紹介します。</p>
              <div class="dish">
                <img src="img/dish-fork-knife.png" alt="お皿　フォーク　スプーン">
              </div>
@@ -208,23 +239,24 @@
      </div><!-- /.link-more -->
    </div><!-- /.link-->
      </div><!-- /.flex -->
-     <img src="img/semi-lace-white.png" alt=" レース白" class="lace-white">
+     <img src="img/semi-lace-white.png" alt=" レース白" class="lace-white pc-only">
    </section>      
    <section id="access">
      <h3 class="link-jp">アクセス</h3>
      <h4 class="link-en">ACCESS</h4> 
      <div class="access-flex">
        <font face="Hiragino Kaku Gothic ProN">
-         <p>〒211-0004 神奈川県川崎市中原区新丸子東1丁目983-1</p>
+         <p>〒211-0004<br class="sp-only"> 神奈川県川崎市中原区新丸子東1丁目983-1</p>
          <p>TEL : 044-872-9288</p>
-         <p>OPEN / All days 11:00~23:00 (ラストオーダー 30min)</p>
+         <p>OPEN / All days 11:00~23:00 <br class="sp-only">(ラストオーダー 30min)</p>
          <p>MAIL : info-nappa69@nappa69.com</p>
        </font>
        <div class="white-flower">
-         <img src="img/flower-white.png" alt="白い花" >
+         <img src="img/flower-white.png" alt="白い花" class="pc-only">
        </div>
        <div class="map">
-         <img src="img/map.png" alt="地図">
+         <img src="img/map.png" alt="地図" class="img-map pc-only">
+         <img src="img/map-sp.png" alt="地図" class="img-map sp-only">
          <button type="button" class="btn btn-primary rounded-pill arrow map">
            <span class="button-text black">
              ページTOPへ
@@ -236,6 +268,7 @@
  </main>
  <footer>
     <div class="footer-menu">
+      <img src="img/flower-white.png" alt="白い花" class="footer-flower sp-only">
       <ul class="footer-nav">
         <a href="menu.html">
           <li class="jn-text"><img src="img/arrow-sm.png" alt="矢印" class="ft-arrow">メニュー</li>
@@ -263,13 +296,13 @@
     </div>
     <div class="sns-link">
       <div class="twitter">
-        <img src="img/Twitter.png" alt="ツイッターロゴ">
+        <img src="img/Twitter.png" alt="ツイッターロゴ" class="f-logo">
       </div><!-- /.twitter -->
       <div class="facebook">
-        <img src="img/facebook.png" alt="フェイスブックロゴ">
+        <img src="img/facebook.png" alt="フェイスブックロゴ" class="f-logo">
       </div><!-- /.facebook -->
       <div class="sns">
-        <img src="img/LINE_APP.png" alt="ラインロゴ">
+        <img src="img/LINE_APP.png" alt="ラインロゴ" class="f-logo">
       </div><!-- /.sns -->
     </div><!-- /.sns-link -->
     

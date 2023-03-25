@@ -9,9 +9,11 @@ $(window).on('load',function(){
     });
   });
   $('.slider').slick({
-    
     infinite: true, 
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: false,
   });
+  $('.nav_toggle').on('click',function(){
+    $('.nav_toggle, .nav, .gnav').toggleClass('show');
+  })
