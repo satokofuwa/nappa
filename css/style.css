@@ -1297,7 +1297,7 @@ height: auto;
     ul.pagenation {
       display: inline-block;
       padding: 0;
-      left: 50%;
+      
   }
   
   ul.pagenation li {
@@ -1391,6 +1391,7 @@ ul.pagenation {
   padding: 50px;
   margin-bottom: 50px;
   width: 100%;
+  
 }
 .news-table {
  margin-bottom: 0;
@@ -1402,4 +1403,85 @@ ul.pagenation {
   margin-left: 110px;
  }
 
+}
+/* ニュース詳細 */
+#news_detail{
+
+}
+#news_detail .btn.btn-primary.rounded-pill{
+  background-color: #EAD2B8;
+  text-align: center;
+  color:#662C10
+}
+#news_detail main{
+  text-align: left;
+}
+#news_detail h1{
+  text-align: center;
+
+}
+#news_detail main time, #news_detail main button{
+  display: inline;
+  text-align: left;
+  width: 142px;
+  margin-right: 22px;
+}
+#news_detail main button{
+  display: inline;
+}
+.endive{
+ text-align: center;
+ margin-top: 28px;
+}
+.price{
+  text-align: right;
+  margin-right: 178px;
+  margin-top: 50px;
+  margin-bottom: 34px;
+}
+#news_detail h2{
+  margin-left: 197px;
+}
+#news_detail p{
+  margin-top: 63px;
+  margin-left: 47px;
+  line-height: 2.1;
+  margin-right: 47px;
+}
+.endive-explain {
+  width: 881px;
+}
+#news_detail .line{
+  border-left :7px solid #662C10;
+  margin-left:250px;
+}
+#news_detail .endive-explain1{
+  margin-left: 231px;
+}
+#news_detail .horizontal-line {
+  display: block;
+  width:896px;
+  border-top: 2px dotted #0E4966 ;
+  margin: 56px auto 24px;
+}
+#news_detail .horizontal-line:last-of-type{
+  margin-bottom: 64px;
+}
+span.vertical-line {
+  display: inline;
+  border-right: 2px dotted #0E4966 ;
+  height: 84px;
+  width: 2px;
+  
+}
+
+.text-flex {
+  
+  display: flex;
+  width: 100%;
+  justify-content:space-between;
+
+  align-items: end;
+  padding-left:250px;
+  padding-right:250px;
 }
