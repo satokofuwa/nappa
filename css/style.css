@@ -217,7 +217,7 @@ height: auto;
   width: 100%;
   }
   ul.nav_menu_ul li,.btn.btn-primary.rounded-pill.sp-only{
-    display: none;
+  
   }
   ul.nav_menu_ul.show li {
     display: block;
@@ -451,7 +451,7 @@ height: auto;
     
      .news{
        width:100%;
-       margin-right: 23px;
+       margin-left: 0;
        height: 100%;
        position: relative;
       
@@ -464,6 +464,8 @@ height: auto;
     .news dd{
       margin-left: 0;
       width: 253px;
+      text-align: left;
+      padding-bottom: 20px;
     }
   
      .week-lunch{
@@ -1204,9 +1206,9 @@ height: auto;
     .news-header ul.nav_menu_ul{
       width: 100%;
       display: flex;
-      justify-content:end;
+      justify-content: flex-start;
       position: relative;
- 
+      color: #000000;
     }
     
     .news-header li {
@@ -1312,6 +1314,12 @@ height: auto;
   ul.pagenation li a:hover {
     background-color: #EAD2B8;
   }
+  .news-footer-menu li.en-text {
+   margin-left: 40px;
+  }
+  #news_all_page .sns-link{
+margin-top: 30px;
+   }
 
 @media screen and (max-width:375px) {
   .news-title.show{
@@ -1319,6 +1327,7 @@ height: auto;
   }
   .news-header li.show{
     margin: 0 auto 64px;
+    color: white;
   }
   
   header.news-header {
@@ -1377,12 +1386,20 @@ ul.pagenation li {
 }
 ul.pagenation {
   display: block;
- margin: 0 auto;
+  margin: 0 auto;
+  height: 100%;
+  padding: 50px;
+  margin-bottom: 50px;
+  width: 100%;
 }
 .news-table {
-  margin-bottom: 30px;
+ margin-bottom: 0;
 }
 .news-table tr:last-child {
   padding-bottom: 20px;
 }
+.news-footer-menu li.en-text {
+  margin-left: 110px;
+ }
+
 }
