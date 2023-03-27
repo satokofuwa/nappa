@@ -15,8 +15,8 @@ $(window).on('load',function(){
     arrows: false,
   });
   $('.nav_toggle').on('click',function(){
-    $('.nav_toggle, .nav, .gnav, ul, li,.btn.btn-primary.rounded-pill.sp-only, a.news-title').toggleClass('show');
+    $('.nav_toggle, .nav, .gnav, ul, li,.btn.btn-primary.rounded-pill.sp-only').toggleClass('show');
   });
   $('li.nav_menu_li a').on('click',function(){
-    $('.nav_toggle, .nav, .gnav, ul, li,.btn.btn-primary.rounded-pill.sp-only, a.news-title').removeClass('show');
+    $('.nav_toggle, .nav, .gnav, ul, li,.btn.btn-primary.rounded-pill.sp-only').removeClass('show');
   });
