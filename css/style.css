@@ -1586,3 +1586,18 @@ span.vertical-line {
   }
 
 }
+/* メニューページ */
+#menu .gnav{
+  top:0;
+}
+.menu-lunch{
+  margin-top: 90px;
+  border:9px solid #F5E4C4;
+}
+.menu-lunch:last-of-type {
+  margin-bottom: 48px;
+}
+.tax{
+ text-align: left;
+ margin-left: 120px;
+}
