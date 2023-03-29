@@ -5,14 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport-extra" content="min-width=375"/>  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>  -->
   <link rel="stylesheet" href="../js/aos/aos.min.css"/>
   <link rel="stylesheet" href="../js/slick/slick-theme.css"/> 
   <link rel="stylesheet" href="../js/slick/slick.css"/>
   <link rel="stylesheet" href="../css/normalize.css"/>
+  <link rel="stylesheet" href="../css/custom.css"/>
   <link rel="stylesheet" href="../css/style.css"/>
+
   <script src="../js/script.js"></script>
-  <title>ニュース一覧</title>
+  <title>メニュー</title>
 </head>
 <body id="menu">
   <header class="news-header">
@@ -50,11 +53,25 @@
 </div><!-- /#breadcrumb -->
 
 <main>
-  <img src="../img/lunch-menu.jpg" alt="ランチメニュー" class="menu-lunch lunch">
-  <img src="../img/cafe-menu.jpg" alt="カフェメニュー" class="menu-lunch">
-  <img src="../img/coffee.jpg" alt="コーヒーメニュー" class="menu-lunch">
+  <img src="../img/lunch-menu.jpg" alt="ランチメニュー" id="lunch" class="menu-lunch">
+  <img src="../img/cafe-menu.jpg" alt="カフェメニュー" id="cafe" class="menu-lunch">
+  <img src="../img/coffee.jpg" alt="コーヒーメニュー" id="coffee" class="menu-lunch">
   <p class="tax">※全て税抜金額となっております。</p>
 
+  <button type="button" class="btn btn-primary rounded-pill sp-only reservation">
+    <span class="reserve-web">web予約はこちらから</span><!-- / --> 
+  </button>
+ 
+  <p>お電話での予約はこちらから</p>
+  <button type="button" class="btn btn-primary rounded-pill sp-only tel border border-brown border-4 ">
+    <span class="reserve-tel">044-872-9288</span><!-- / --> 
+  </button>
+
+  <div class="pagetop">
+    <button type="button" class="btn btn-primary rounded-pill arrow">
+      <span class="go-top">ページトップへ</span><!-- / --> 
+    </button>
+  </div>
 </main>
 
 <footer>

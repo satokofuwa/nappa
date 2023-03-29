@@ -115,7 +115,6 @@ z-index: 1;
   background-repeat: no-repeat;
   background-position: 95% 45%;
   background-size: 11.6%;
-  margin-left: 103px;
   margin-bottom: 46.5px ;
 }
 .news .btn.btn-primary.rounded-pill.arrow {
@@ -277,6 +276,7 @@ li.nav_menu_li a{
   }
 
   ul.nav_menu_ul.show{
+  
     padding-left: 0;
     display:flex;
     width: 100%;
@@ -284,7 +284,7 @@ li.nav_menu_li a{
     color:#FFFFFF;
     justify-content: center;
     align-items: center;
-    margin-top: 63px; 
+    margin-top: 30px; 
     position: absolute;
 
   }
@@ -407,8 +407,12 @@ li.nav_menu_li a{
     margin-bottom: 32px;
   }
   .news dd {
-    display:inline-block;
-    margin: 0 0  32px 40px;
+    display:block;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .news dt{
+    text-align: left;
   }
   .top-menu-flower{
    /* margin-right: 8.6vw; */
@@ -418,11 +422,10 @@ li.nav_menu_li a{
   .inview {
   position: relative;
   margin-top: 16px;
-  
-   }
+     }
    .inview h3{
    margin-bottom: 42px;
-   }
+     }
   .week-lunch{
     text-align: center;
     margin-top: -300px;
@@ -440,7 +443,9 @@ li.nav_menu_li a{
    height: 366px;
    margin-bottom: 60px;
   }
- 
+  time.date{
+    margin-left: 0;
+  }
   @media screen and (max-width:375px) {
     #news_all {
        display:block;
@@ -1108,8 +1113,11 @@ li.nav_menu_li a{
   }
   .footer-nav li{
     margin-left: 0;
-    /* これは消せない */
     list-style-type: none;
+
+  }
+  li.en-text{
+    margin-left: 40px;
   }
   .ft-arrow{
    margin-right: 10px;
@@ -1217,7 +1225,7 @@ li.nav_menu_li a{
     }
     #news_detail .news-header ul.nav_menu_ul{
   
-      top:0px;
+ 
 
     }
     
@@ -1340,7 +1348,7 @@ margin-top: 30px;
     color: white;  
   }
   .news-header li.show{
-    margin: 0 auto 64px;
+    margin: 0 auto 50px;
     color: white;
   }
   
@@ -1414,7 +1422,7 @@ ul.pagenation {
   padding-bottom: 20px;
 }
 .news-footer-menu li.en-text {
-  margin-left: 110px;
+  margin-left: 130px;
  }
  #news_all_page a.reserve-link{
   display: block;
@@ -1512,6 +1520,8 @@ span.vertical-line {
   padding-left:250px;
   padding-right:250px;
 }
+
+
 @media screen and (max-width:375px) {
   #news_detail a.reserve-link{
     display: block;
@@ -1591,13 +1601,81 @@ span.vertical-line {
   top:0;
 }
 .menu-lunch{
+  display: block;
   margin-top: 90px;
+  margin-right: auto;
+  margin-left: auto;
   border:9px solid #F5E4C4;
 }
 .menu-lunch:last-of-type {
   margin-bottom: 48px;
 }
+#menu main{
+  display: block;
+  text-align: center;
+}
 .tax{
  text-align: left;
  margin-left: 120px;
+}
+#menu .arrow{
+ width: 232px;
+ background-image: url(../img/pagetop.png);
+
+ 
+}
+.pagetop{
+  display: block;
+  text-align: right;
+  margin-right: 80px;
+}
+@media screen and (max-width:375px) {
+  .menu-lunch{
+    width: 254px;
+    height: 362px;
+  }
+  main{
+    text-align: center;
+  }
+  #menu .btn.btn-primary.rounded-pill.reservation{
+   width: 300px;
+   margin: 0 auto 30px;
+  }
+  p.tax{
+   margin-left: 0;
+   text-align: center;
+  }
+  .pagetop{
+    margin-right: 0;
+    text-align: center;
+  }
+
+  /* ページトップアイコン */
+  #menu .btn.btn-primary.rounded-pill.arrow  {
+   margin-bottom: 80px;
+
+  }
+  #menu .btn.btn-primary.rounded-pill.sp-only.tel.border.border-brown.border-4 {
+    background-color:#EAD2B8;
+    width: 300px;
+    margin-top: 0;
+    margin: 0 auto;
+  }
+  .sns-link {
+    margin-bottom: 0;
+  }
+  #menu a.reserve-link{
+    display: block;
+    width: 100%;
+    margin-top: -30px;
+   }
+   .reserve-web{
+    font-size: 24px;
+   }
+   .reserve-tel{
+    font-size: 24px;
+    color: #000000;
+   }
+
+   
 }
