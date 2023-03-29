@@ -255,7 +255,8 @@ li.nav_menu_li a{
   .nav_toggle.show {
     display: block;
    background-color: var(--accent-color1);
-   position: fixed;
+   /* position: fixed; */
+
 
   }
   .nav_toggle i:nth-child(2) {
@@ -279,12 +280,13 @@ li.nav_menu_li a{
   
     padding-left: 0;
     display:flex;
-    width: 100%;
+    width: 100vw;
+  
     flex-direction: column;
     color:#FFFFFF;
     justify-content: center;
     align-items: center;
-    margin-top: 30px; 
+    margin-top: 200px; 
     position: absolute;
 
   }
@@ -373,7 +375,7 @@ li.nav_menu_li a{
   height: auto;
 }
 /* ニュース */
-#news_all {
+#news_all_page {
   display: flex;
   width: 100%;
   height: 580px;
@@ -447,14 +449,10 @@ li.nav_menu_li a{
     margin-left: 0;
   }
   @media screen and (max-width:375px) {
-    #news_all {
-       display:block;
-       width:100%;
-       height: auto;
-       position: relative;
-       top: 57px;
-     }
-    
+    #news_all_page{
+      display: block;
+    height: 100%;
+    }
      .news{
        width:100%;
        margin-left: 0;
@@ -467,16 +465,21 @@ li.nav_menu_li a{
       padding-top: 56px;
       padding-bottom: 24px;
      }
+     .news dt {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+     }
     .news dd{
-      margin-left: 0;
+      margin: 0 auto;
       width: 253px;
       text-align: left;
       padding-bottom: 20px;
+      margin-left: 20px;
     }
   
-     .week-lunch{
-      margin-top: 0;
-      margin:0 auto;
+     img.weekly-lunch{
+
      }
   
      img.top-menu-flower {
@@ -526,10 +529,7 @@ li.nav_menu_li a{
       margin-left: 50px;
     
      }
-     img.weekly-lunch{
-      width: 100vw;
-
-     }
+   
      li::marker {
       padding-right: 16px;
      }
@@ -543,6 +543,9 @@ li.nav_menu_li a{
      }
      time.date:first-of-type{
       margin-right: 16px;
+     }
+     #news_all_page ul.nav_menu_ul{
+      margin-top: 30px;
      }
    
    }
@@ -1225,7 +1228,7 @@ li.nav_menu_li a{
     }
     #news_detail .news-header ul.nav_menu_ul{
   
- 
+     margin-top: 30px;
 
     }
     
@@ -1523,6 +1526,7 @@ span.vertical-line {
 
 
 @media screen and (max-width:375px) {
+ 
   #news_detail a.reserve-link{
     display: block;
     width: 100%;
@@ -1675,6 +1679,9 @@ span.vertical-line {
    .reserve-tel{
     font-size: 24px;
     color: #000000;
+   }
+   #menu .news-header ul.nav_menu_ul{
+    margin-top: 30px;
    }
 
    
