@@ -596,32 +596,25 @@ li.nav_menu_li a{
    position:relative;
   
   }
-  .lace{
-    position:relative;
-    width:445px;
-  left:60px;
-    z-index: 1;
-  }
+  /* .lace{ */
+    /* position:relative; */
+    /* width:445px; */
+  /* left:60px; */
+    /* z-index: 1; */
+  /* } */
   .concept-content{
-    position: relative;
-    width:100vw;
+    width:100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    margin-right: 300px;
-    text-align: center;
+    margin-left: -450px;
     z-index:2;
-   
-    
+    background-image: url(../img/lace.png);
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  .concept-text{
-  
-  position: absolute;
-  top:30%;
-  left:23vw;
-
-  z-index: 1;
-  }
+ 
   .concept-content dt{
     line-height: 1.1;
     margin-top: 2rem;
@@ -635,17 +628,9 @@ li.nav_menu_li a{
   }
   
   .concept-flower{
-    
-     width:45px;
-     height:45px;
-     margin: 0;
-
-     position:absolute;
-     top:93px;
-     left:29vw;
+    width:45px;
+    height:45px;
     z-index: 1;
-     /* margin-left: -50%; */
-     /* margin-top: -80%; */
   }
   .btn.btn-primary.rounded-pill.arrow.concept.d-block{
     width: 400px;
@@ -1713,41 +1698,63 @@ span.vertical-line {
 main{
   display: block;
   position: relative;
+
 }
 .spoon-xxl{
 float:left;
 margin-top: -200px;
-margin-left: 10vw;
-
-
 }
 .anniversary{
   position: absolute;
   top:128px;
   left:50%;
-  
   transform: translateX(-50%);
 }
 .block{
   display: block;
   height: 100vh;
   position: relative;
-
+  clear:both;
 
 }
 #plan p{
   display: block;
   text-align: left;
   margin-left: 221px;
-  
+  margin-bottom: 128px;
+}
+.reserve {
+  display: flex;
+  justify-content: space-evenly;
+  align-items:end;
+  margin-bottom: 95px;
+}
+
+.reserve-web{
+  font-size: 24px;
+}
+#plan .btn.btn-primary.rounded-pill.reservation{
+  display: block;
+width:378px;
+height: 121px;
+
+}
+#plan .btn.btn-primary.rounded-pill.tel.border.border-brown.border-5{
+   
+  width:378px;
+  height: 121px;
+  background-color: #EAD2B8;
+
+}
+.tel{
+  font-size: 24px;
+  color: black;
 }
 @media screen and (max-width:375px) {
   #plan ul.nav_menu_ul.show{
-  
     margin-top: 30px;
-  
    }
-   .gnav.show{
+   #plan .gnav.show{
     display: block;
     margin: 0 auto;
    }
@@ -1755,5 +1762,42 @@ margin-left: 10vw;
     display: block;
     margin: 0 auto 30px;
    }
-   
+}
+#party{
+  display: block;
+  position: relative;
+}
+#party table{
+  margin: 0 auto;
+  width: 738px;
+
+}
+#party h2 {
+  margin-bottom: 160px;
+}
+#party table,th,td {
+  border: 1px #EAD2B8 solid;
+  border-collapse: collapse;
+}
+#party th{
+  text-align: center;
+  width: 167px;
+  background-color: #0E4966;
+  color: white;
+ 
+}
+#party td{
+  background-color: white;
+  text-align: center;
+}
+.lg-blue-flower{
+position: absolute;
+top:0;
+right:120px;
+}
+.circle-sm{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0E4966;/*背景色*/
 }
