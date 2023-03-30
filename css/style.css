@@ -1491,18 +1491,24 @@ ul.pagenation {
   margin-bottom: 34px;
 }
 
-#news_detail p{
+#news_detail p:first-of-type{
   margin-top: 63px;
+
+  line-height: 2.1;
+  margin-right: 47px;
+}
+#news_detail p{
   margin-left: 47px;
   line-height: 2.1;
   margin-right: 47px;
 }
 .endive-explain {
   width: 881px;
+
 }
 #news_detail .line{
   border-left :7px solid #662C10;
-  margin-left:200px;
+  margin-left:230px;
 }
 #news_detail .endive-explain1{
   margin-left: 231px;
