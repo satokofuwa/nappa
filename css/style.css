@@ -1724,9 +1724,10 @@ width: 34.9vw;
   clear:both;
 
 }
-#plan p{
+#anniversary p{
   display: block;
   text-align: left;
+  margin-left: 17.2vw;
 }
 #plan p:first-of-type{
 
@@ -1842,6 +1843,7 @@ font-size: 24px;
   width: 246px;
   height: 56px;
   margin-top: 24px;
+  
 }
 
 #party table{
