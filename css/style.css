@@ -1065,8 +1065,7 @@ li.nav_menu_li a{
   @media screen and (max-width:375px) {
     #access{
       display: block;
-      height: 100%;
-      padding-bottom: 100px;
+     
     }
     .access-flex{
       display: block;
@@ -1076,6 +1075,7 @@ li.nav_menu_li a{
     }
     .access-flex p {
       margin-top: 58px;
+      margin-left: 10px;
     }
     .map .img-map {
       width: 280px;
@@ -1085,13 +1085,10 @@ li.nav_menu_li a{
     .access-flex p:last-of-type{
       margin-bottom: 58px;
     }
-    .map{
-      margin-bottom: 80px;
-    }
-
+   
 
 .btn.btn-primary.rounded-pill.arrow.map{
-  margin: 20px auto;
+  margin: 20px auto 0;
 }
 
   }
@@ -1105,6 +1102,7 @@ li.nav_menu_li a{
     align-items: center;
     padding: 0;
     margin: 0;
+    
     
   }
   .footer-nav li{
@@ -1138,10 +1136,11 @@ li.nav_menu_li a{
   }
   .sns-link{
     display: flex;
-    margin-left: 50px;
+    justify-content: center;
+    
   }
   .twitter{
-    margin-left: 30px;
+   
     margin-bottom: 35px;
   }
   .facebook{
@@ -1155,16 +1154,21 @@ li.nav_menu_li a{
   @media screen and (max-width:375px) {
     footer {
       display: block;
-      margin-top: -50px;
+    
+    }
+    .footer-menu{
+      position: relative;
     }
     li.footer-nav{
       list-style-type: none;
     }
     ul.footer-nav {
       display: block;
+      padding-top: 30px;
     }
     li.jn-text, li.en-text{
       margin-left: 70px;
+    
       list-style-type: none;
     }
     li.en-text{
@@ -1174,9 +1178,11 @@ li.nav_menu_li a{
     .footer-flower{
       position:absolute;
       right:30px;
+      top: 20px;
     }
     .sns-link {
-      margin: 24px 40px;
+      width: 100%;
+    
         }
   .f-logo{
     width: 50px;
@@ -1659,9 +1665,7 @@ span.vertical-line {
     margin-top: 0;
     margin: 0 auto;
   }
-  .sns-link {
-    margin-bottom: 0;
-  }
+  
   #menu a.reserve-link{
     display: block;
     width: 100%;
@@ -1702,17 +1706,20 @@ main{
 }
 .spoon-xxl{
 float:left;
-margin-top: -200px;
+margin-top: -12vw;
+width: 34.9vw;
 }
 .anniversary{
-  position: absolute;
-  top:128px;
+  position:absolute;
+  top:10vw;
   left:50%;
   transform: translateX(-50%);
+  width:65.4vw;
+ 
 }
 .block{
   display: block;
-  height: 100vh;
+  height: 60vw;
   position: relative;
   clear:both;
 
@@ -1720,8 +1727,9 @@ margin-top: -200px;
 #plan p{
   display: block;
   text-align: left;
-  margin-left: 221px;
-  margin-bottom: 128px;
+}
+#plan p:first-of-type{
+
 }
 .reserve {
   display: flex;
@@ -1739,7 +1747,7 @@ width:378px;
 height: 121px;
 
 }
-#plan .btn.btn-primary.rounded-pill.tel.border.border-brown.border-5{
+#plan .btn.btn-primary.rounded-pill.tel.border.border-brown.border-8{
    
   width:378px;
   height: 121px;
@@ -1750,23 +1758,6 @@ height: 121px;
   font-size: 24px;
   color: black;
 }
-@media screen and (max-width:375px) {
-  #plan ul.nav_menu_ul.show{
-    margin-top: 30px;
-   }
-   #plan .gnav.show{
-    display: block;
-    margin: 0 auto;
-   }
-   #plan a.reserve-link{
-    display: block;
-    margin: 0 auto 30px;
-   }
-}
-#party{
-  display: block;
-  position: relative;
-}
 #party table{
   margin: 0 auto;
   width: 738px;
@@ -1775,7 +1766,92 @@ height: 121px;
 #party h2 {
   margin-bottom: 160px;
 }
-#party table,th,td {
+
+#party th{
+  text-align: center;
+  width: 167px;
+  background-color: #0E4966;
+  color: white;
+ 
+}
+#party{
+  display: block;
+  position: relative;
+}
+#party td{
+  background-color: white;
+  text-align: left;
+
+}
+.lg-blue-flower{
+  position: absolute;
+  top:0;
+  right:120px;
+  }
+  .circle-sm{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0E4966;
+    display: inline-block;
+    margin: 0 10px;
+  }
+@media screen and (max-width:375px) {
+  #plan ul.nav_menu_ul.show{
+    margin-top: 30px;
+   }
+   #plan .gnav.show{
+    display: block;
+    margin: 0 auto;
+    
+   }
+   #plan a.reserve-link{
+    display: block;
+    margin: 0 auto 30px;
+   }
+   .anniversary{
+    display: block;
+    position: static;
+    width: 304px;
+    height: 218px;
+    margin: 32px auto 56px;
+    transform: translateX(0);
+   }
+ .block{
+  display: block;
+  height: 100%;
+ }
+#plan p{
+  margin-left: 35px;
+  margin-bottom: 26px;
+
+  line-height: 2;
+  text-align: left;
+}
+.reserve{
+  display: block;
+}
+#plan .btn.btn-primary.rounded-pill.reservation{
+margin: 21px auto 56px auto;
+width: 264px;
+height: 56px;
+font-size: 24px;
+}
+#plan .btn.btn-primary.rounded-pill.tel.border.border-brown.border-8{
+  background-color: #EAD2B8;
+  width: 246px;
+  height: 56px;
+  margin-top: 24px;
+}
+
+#party table{
+  margin: 0 auto;
+  width: 327px;
+  table-layout:fixed;
+
+}
+
+#party table.patry th td,table.plan-detail th td {
   border: 1px #EAD2B8 solid;
   border-collapse: collapse;
 }
@@ -1789,18 +1865,35 @@ height: 121px;
 #party td{
   background-color: white;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 10px;
+  overflow-wrap : break-word;
 }
-.lg-blue-flower{
-position: absolute;
-top:0;
-right:120px;
+.circle-sm {
+  display: none;
 }
-.circle-sm{
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #0E4966;
-  display: inline-block;
-  margin: 0 10px;
+
+#plan h2.rental{
+  margin-top: 72px;
+}
+img.lg-blue-flower{
+  display: none;
+}
+table {
+  width: 327px;
+}
+#party h2.rental-en{
+  margin-bottom: 32px;
+}
+#party table td{
+  margin-bottom: 0;
+}
+#party td {
+  padding-bottom: 49px;
+  border-collapse: collapse;
+}
+#plan .table-p{
+  margin:0 0 8px 0;
+  overflow-wrap : break-word;
+}
+
 }

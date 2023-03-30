@@ -49,19 +49,21 @@
         </ul>
 
       </div><!-- /#breadcrumb -->
+   
       <main>
+        <section id="anniversary">
          <h2>アニバーサリープラン</h2>
           <h2>ANNIVERSARY PLAN</h2>
         <div class="block">
-         <img src="../img/spoon-xxl.png" alt="" class="spoon-xxl">
+         <img src="../img/spoon-xxl.png" alt="" class="spoon-xxl pc-only">
          <img src="../img/anniversary.png" alt="" class="anniversary">
         </div><!-- /.block --> 
 
         <p>お一人様　3500円（税込）より承ります。<br>
-          ドリンクは別となります。<br>
-          オプションにてホールケーキをご用意いたします。<br>
-          ホールケーキの予約は3日前までにお願い致します。
-        </p>
+          ドリンクは別となります。</p>
+        <p>オプションにてホールケーキを<br>ご用意いたします。</p>
+        <p>ホールケーキの予約は3日前までに<br>お願い致します。</p>
+       
 
       <div class="reserve">
         <button type="button" onclick = "location.href='https://retty.me/'" class="btn btn-primary rounded-pill reservation">
@@ -72,17 +74,18 @@
           <div class="tel">
            お電話での予約はこちらから
           </div>
-          <button  type="button"  class="btn btn-primary rounded-pill  tel border border-brown border-5 ">
+          <button  type="button"  class="btn btn-primary rounded-pill  tel border border-brown border-8">
             <span class="tel">044-872-9288</span><!-- / --> 
           </button>
         </div>
       </div>
+      </section>
       
       <section id="party">
-        <h2>貸切・各種パーティプラン</h2>
-        <h2>PLAN</h2>
+        <h2 class="rental">貸切<span class="pc-only">・</span><br class="sp-only">各種パーティプラン</h2>
+        <h2 class="rental-en">PLAN</h2>
         <img src="../img/flower-lg.png" alt="青い花大" class="lg-blue-flower">
-        <table>
+        <table class="party">
           <caption>パーティプラン料金表</caption>
           <tbody>
           <tr>
@@ -95,7 +98,7 @@
           </tr>
         </tbody>
         </table>
-        <table>
+        <table class="plan-detail">
           <caption>プラン詳細</caption>
           <tbody>
             <tr>
@@ -122,22 +125,23 @@
             </tr>
             <tr> 
               <td><div class="circle-sm"></div>電源カウンター席</td>
-              <td >2人 ※個室はございません。</td>
+              <td >2人 <br class="sp-only">※個室はございません。</td>
             </tr>
             <tr>
               <th>禁煙・分煙</th>
-              <td colspan="2">分煙　（テラス席のみ可）</td>
+              <td colspan="2">分煙<br class="sp-only">（テラス席のみ可）</td>
             </tr>
             <tr>
               <th>お支払い</th>
-              <td colspan="2">現金・各種クレジット払い (VISA、MASTER、JCB、AMEX、Diners)　</td>
+              <td colspan="2">現金・各種クレジット払い <br class="sp-only">(VISA、MASTER、JCB、AMEX、Diners)　</td>
             </tr>
             <tr>
               <th>備考</th>
               <td colspan="2">
-                ※前日までのご予約をお願いいたします。
-                ※2名様以上のグループでお一人様1,500円以上オーダーお願いいたします。
-                未満の場合は、バースデープレート代、別途600円（＋TAX）頂戴致します。</td>
+                <p class="table-p"> ※前日までのご予約をお願いいたします。</p><br class="sp-only">
+                <p class="table-p">※2名様以上のグループでお一人様1,500円以上オーダーお願いいたします。</p><br class="sp-only">
+                <p class="table-p">未満の場合は、バースデープレート代、別途600円（＋TAX）頂戴致します。</p>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -151,7 +155,7 @@
             <div class="tel">
              お電話での予約はこちらから
             </div>
-            <button  type="button"  class="btn btn-primary rounded-pill  tel border border-brown border-5 ">
+            <button  type="button"  class="btn btn-primary rounded-pill  tel border border-brown border-8 ">
               <span class="tel">044-872-9288</span><!-- / --> 
             </button>
           </div>
@@ -168,7 +172,7 @@
               <li class="jn-text"><img src="../img/arrow-sm.png" alt="矢印" class="ft-arrow">メニュー</li>
               <li class="en-text">menu</li>
             </a>
-            <a href="../index.html#plan">
+            <a href="#plan">
               <li class="jn-text"><img src="../img/arrow-sm.png" alt="矢印" class="ft-arrow">プラン</li>
               <li class="en-text">plan</li>
             </a>
@@ -199,7 +203,7 @@
             <img src="../img/LINE_APP.png" alt="ラインロゴ" class="f-logo">
           </div><!-- /.sns -->
         </div><!-- /.sns-link -->
-        
+      
       </footer>
      
      <script src="../js/jquery-3.6.3.min.js"></script>

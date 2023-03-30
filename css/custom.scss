@@ -1,3 +1,8 @@
 $border-color:   #662C10 !important;
+$border-width:                1px;
+$border-widths: (
+  8: 8px
+);
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
