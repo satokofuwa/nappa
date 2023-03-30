@@ -1788,7 +1788,8 @@ height: 121px;
 }
 #party td{
   background-color: white;
-  text-align: center;
+  text-align: left;
+  padding-left: 20px;
 }
 .lg-blue-flower{
 position: absolute;
@@ -1796,8 +1797,10 @@ top:0;
 right:120px;
 }
 .circle-sm{
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: #0E4966;/*背景色*/
+  background: #0E4966;
+  display: inline-block;
+  margin: 0 10px;
 }
