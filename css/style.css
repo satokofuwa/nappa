@@ -1917,7 +1917,7 @@ table {
 }
 }
 /* リンクページ */
-#link.gnav{
+#link .gnav{
   top:0;
 }
 .link{
