@@ -1591,6 +1591,7 @@ span.vertical-line {
   #news_detail p.article1{
     margin-left: 34px;
     margin-right: 5px;
+    margin-top: 0;
     width:150px
   }
   #news_detail p.article2{
@@ -1914,5 +1915,78 @@ table {
   margin:0 0 8px 0;
   overflow-wrap : break-word;
 }
+}
+/* リンクページ */
+.gnav{
+  top:0;
+}
+.link{
+  width: 100%;
+  height: 100%;
+ 
+}
+.link p{
+   margin-top: 108px; 
+   margin-bottom: 89px; 
+}
+.shop-list {
+  list-style-type: none;
+  display:grid;
+  grid-template-columns: 14.8rem 14.8rem;
+  grid-gap: 7.3rem 13.8rem;
+  grid-template-rows: 45rem 45rem;
+  justify-content: center;
+  align-items: flex-start;
+  
+} 
+.catd-body{
+  background-color: #EAD2B8;
+}
+.card-body.bs-card-bg .btn.btn-primary.rounded-pill{
+  width: 150px;
+  text-align: center;
 
+}
+.card-body.bs-card-bg .btn.btn-primary.rounded-pill span{
+  line-height: 2rem;
+  vertical-align: middle;
+}
+h5.card-title{
+  /* margin-top: 20px; */
+}
+p.card-text{
+  /* margin-top: 50px; */
+}
+.bg-img1{
+  display: inline-block;
+  width: 243px;
+  height:1556.79;
+  background-image: url(../img/link-img.png);
+ 
+}
+.bg-img2{
+  display: inline-block;
+  width: 243px;
+  height:1556.79;
+  background-image: url(../img/link-img.png);
+
+}
+#link main{
+  display: flex;
+  justify-content: space-between;
+}
+p.card-text1{
+  margin-top: 68px;
+  margin-bottom: 48px;
+}
+p.card-text2{
+  margin-top: 48px;
+}
+p.card-text3{
+  margin-top: 68px;
+  margin-bottom: 88px;
+}
+p.card-text4{
+  margin-top: 58px;
+  margin-bottom: 48px;
 }
