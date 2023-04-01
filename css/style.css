@@ -1306,10 +1306,19 @@ li.nav_menu_li a{
       padding-bottom: 10px;
       color: white;
     }
-    #breadcrumb li{
-      margin-left: 15px;
+    #breadcrumb li:not(:last-child)::after {
+      display: inline-block;
+      margin: 0 .25rem;
+      content: ">";
+    
+  }
+  #breadcrumb li{
+    padding-left: 0;
+  }
+    /* #breadcrumb li{ */
+      /* margin-left: 15px; */
      
-    }
+    /* } */
     #breadcrumb a{
      color: white;
   
