@@ -216,16 +216,14 @@ li.nav_menu_li a{
   z-index:1;
   width: 100%;
   }
-  ul.nav_menu_ul li,.btn.btn-primary.rounded-pill.sp-only{
-  
-  }
+
   ul.nav_menu_ul.show li {
     display: block;
   }
  .btn.btn-primary.rounded-pill.sp-only.show{
     display: block;
- 
     margin: 0 auto;
+    width: 150px;
 
   }
   .nav_toggle {
@@ -329,13 +327,17 @@ li.nav_menu_li a{
     height: 154px;
     object-fit: contain;
   }
-  .btn.btn-primary.rounded-pill{
-    background-color: #662C10;
+  #menu .btn.btn-primary.rounded-pill.tel{
+   background-color: #EAD2B8;
     border: none;
     line-height: 1.1;
     width: 41.6vw;
     height: 6.5vh;
-    margin-top: 115px;
+
+    width: 246px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
     
   }
   .btn.btn-primary.rounded-pill:hover{
@@ -361,6 +363,32 @@ li.nav_menu_li a{
   .vt-spoon{
     display: block;
     margin: 0 auto;
+    position: relative;
+    animation: pathmove 1.4s ease-in-out infinite;
+  
+  }
+  .vt-spoon::after  {
+    content: "";
+    position: absolute;
+    top:30px;
+   
+
+  }
+  @keyframes pathmove{
+    0%{
+      height:0;
+      top:0;
+      opacity: 0;
+    }
+    30%{
+      height:30px;
+      opacity: 1;
+    }
+    100%{
+      height:0;
+      top:100px;
+      opacity: 0;
+    }
   }
   img.spoon-lg{
    margin-left: 46px;
@@ -899,14 +927,14 @@ li.nav_menu_li a{
     position:relative;
     width: 11vw;
     top:-100px;
-    left: 400px;
+    left:1000px;
     z-index: 1;
   }
   img.spoon-white2{
     position:relative;
     width: 9.6vw;
     top: -150px;
-    left: 450px;
+    left: 1000px;
     z-index: 1;
   }
   @media screen and (max-width:375px) {
@@ -1264,7 +1292,7 @@ li.nav_menu_li a{
      text-align: center;
      width: 100%;
      height: 100%;
-   padding-top: 100px;
+     padding-top: 100px;
 
     }
 
@@ -1660,8 +1688,9 @@ span.vertical-line {
     text-align: center;
   }
   #menu .btn.btn-primary.rounded-pill.reservation{
-   width: 300px;
+   width: 246px;
    margin: 0 auto 30px;
+  
   }
   p.tax{
    margin-left: 0;
@@ -1689,8 +1718,8 @@ span.vertical-line {
     width: 100%;
     margin-top: -30px;
    }
-   .reserve-web{
-    font-size: 24px;
+   #menu .reserve-web{
+    font-size: 20px;
    }
    .reserve-tel{
     font-size: 24px;
@@ -1951,6 +1980,10 @@ table {
   line-height: 2rem;
   vertical-align: middle;
 }
+#link span{
+  line-height: 2rem;
+  vertical-align: middle;
+}
 h5.card-title{
   /* margin-top: 20px; */
 }
@@ -1989,4 +2022,37 @@ p.card-text3{
 p.card-text4{
   margin-top: 58px;
   margin-bottom: 48px;
+}
+@media screen and (max-width:375px) {
+  #link ul.nav_menu_ul.show{
+    margin-top: 30px;
+   }
+   #link .gnav.show{
+    display: block;
+    margin: 0 auto;
+    
+   }
+   #link a.reserve-link{
+    display: block;
+    margin: 0 auto 30px;
+   }
+   #link main{
+    display: block;
+   }
+   .shop-list {
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: 14.8rem;
+    grid-gap: 1rem ;
+    grid-template-rows: 45rem 45rem 45rem 45rem;
+    justify-content: center;
+    align-items: flex-start;
+  } 
+  p.card-text1,p.card-text2,p.card-text3,p.card-text4{
+    margin-bottom: 48px;
+  }
+  #link .btn.btn-primary.rounded-pill {
+    margin-top: 0;
+    width: 150px;
+  }
 }
